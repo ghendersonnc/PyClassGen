@@ -26,7 +26,10 @@ export function activate(context: vscode.ExtensionContext) {
 			});
 		}
 
-		function displayClass(pos: any, attribs: Array<string>): void {
+		function displayClass(attribs: Array<string>): void {
+			let pos = new vscode.Position(editor?.selection.active.line as number,
+										editor?.selection.active.character as number);
+			console.log(pos.character);
 			editor?.edit((edit) => {
 				edit.insert(pos, `class ${className}:`);
 				edit.insert(pos, `\n\t${initMethod}`);
@@ -59,7 +62,7 @@ export function activate(context: vscode.ExtensionContext) {
 		});
 
 		if (className) {
-			displayClass(position, attributes);
+			displayClass(attributes);
 		}
 	});
 
