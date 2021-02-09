@@ -4,7 +4,7 @@ Generate a class including the `__init__` method and attributes for Python
 
 ## Features
 
-\!\[Example\]\(images/example.gif\)
+![Example](images/example.gif)
 
 ## Release Notes
 
