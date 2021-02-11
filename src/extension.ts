@@ -32,10 +32,10 @@ export function activate(context: vscode.ExtensionContext) {
 			console.log(pos.character);
 			editor?.edit((edit) => {
 				edit.insert(pos, `class ${className}:`);
-				edit.insert(pos, `\n\t${initMethod}`);
+				edit.insert(pos, `\n    ${initMethod}`);
 
 				attribs.forEach(function (value) {
-					edit.insert(pos, `\n\t\tself.${value} = ${value}`);
+					edit.insert(pos, `\n        self.${value} = ${value}`);
 
 				});
 			});
@@ -45,7 +45,6 @@ export function activate(context: vscode.ExtensionContext) {
 		let attributes: Array<string> = [];
 		let singleAttribute = await getAttributes();
 		let initMethod = "def __init__ (self, ";
-		let position = new vscode.Position(editor.selection.active.line, editor.selection.active.character);
 
 		while (singleAttribute) {
 			attributes.push(singleAttribute);
