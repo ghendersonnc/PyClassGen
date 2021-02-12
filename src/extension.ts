@@ -25,7 +25,7 @@ export function activate(context: vscode.ExtensionContext) {
 				placeHolder: "Enter attribute"
 			});
 		}
-
+		// TODO: More elegant method of indenting method/attributes
 		function displayClass(attribs: Array<string>): void {
 			let pos = new vscode.Position(editor?.selection.active.line as number,
 										editor?.selection.active.character as number);
