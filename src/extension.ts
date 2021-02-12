@@ -26,6 +26,7 @@ export function activate(context: vscode.ExtensionContext) {
 			});
 		}
 		// TODO: More elegant method of indenting method/attributes
+		// FIXME: Inner class methods/attributes not indenting
 		function displayClass(attribs: Array<string>): void {
 			let pos = new vscode.Position(editor?.selection.active.line as number,
 										editor?.selection.active.character as number);
