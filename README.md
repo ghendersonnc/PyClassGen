@@ -10,6 +10,6 @@ Generate a class including the `__init__` method and attributes for Python
 
 Generate a class within a *.py source file
 
-### 0.1.0
+### 0.1.1
 
 Initial release of PyClassGen (Not published to market place)
