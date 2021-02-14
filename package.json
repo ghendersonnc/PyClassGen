@@ -1,4 +1,5 @@
 {
+	"publisher": "ghendersonnc",
 	"name": "pyclassgen",
 	"displayName": "PyClassGen",
 	"description": "Generate classes for python",
