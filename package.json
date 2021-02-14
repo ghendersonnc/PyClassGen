@@ -1,4 +1,5 @@
 {
+	"repository": {"type": "git", "url": "https://github.com/ghendersonnc/PyClassGen.git"},
 	"publisher": "ghendersonnc",
 	"name": "pyclassgen",
 	"displayName": "PyClassGen",
